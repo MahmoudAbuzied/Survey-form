@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey form</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<form id="survey-form">
+		<p id="description">Let us know how we can improve our site</p>
+		<div class="rowTap">
+			<label for="name" id="name-label" class="labels">Name : </label>
+			<div class="right-tap">
+				<input type="text" class="input-field" id="name" placeholder="Enter your name">
+			</div>
+		</div>
+		<div class="rowTap">
+			<label for="email" id="email-label" class="labels">E-mail : </label>
+			<div class="right-tap">
+				<input type="email" class="input-field" id="email" required="required" placeholder="Enter your email">
+			</div>
+		</div>
+		<div class="rowTap">
+			<label for="number" id="number-label" class="labels">Age : </label>
+			<div class="right-tap">
+				<input type="number" class="input-field" name="age" id="number" placeholder="Age">
+			</div>
+		</div>
+		<div class="rowTap">
+			<div class="labels">
+				<label for="dropdown" id="dropdown-label" >
+					Which option best describes your current role?
+				</label>
+			</div>
+			<div class="right-tap">
+				<select id="dropdown" class="input-field">
+				<option disabled="disabled">Select an option</option>
+				<option>Student</option>
+				<option>Full-time job</option>
+				<option>Part-time job</option>
+				<option>Prefer not to say</option>
+				<option>Other</option>
+			</select>
+			</div>
+		</div>
+		<div class="rowTap">
+			<div class="labels">
+				<label for="radio" >
+					How likely is that you would recommend freeCodeCamp to a friend? Definitely
+				</label>
+			</div>
+			<div id="radio" name="radio" class="right-tap">
+				<ul style="list-style: none">
+					<li class="radio">
+						<label>
+							Definitely
+							<input name="radio-btn" value="1" type="radio" class="userRatings">
+						</label>
+					</li>
+					<li class="radio">
+						<label>
+							Maybe
+							<input name="radio-btn" value="2" type="radio" class="userRatings">
+						</label>
+					</li>
+					<li class="radio">
+						<label>
+							Not sure
+							<input name="radio-btn" value="3" type="radio" class="userRatings">
+						</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row-tap">
+			<div class="labels">
+				<label for="check">
+					Things that should be improved in the future(Check all that apply):
+				</label>
+			</div>
+			<div class="right-tap" name="check" id="check">
+				<ul style="list-style: none">
+					<li class="check">
+						<label>
+							Front-end 
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+					<li class="check">
+						<label>
+							Back-end
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+					<li class="check">
+						<label>
+							Full-stack
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+					<li class="check">
+						<label>
+							Android
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+					<li class="check">
+						<label>
+							IOS
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+					<li class="check">
+						<label>
+							UI/UX
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+					<li class="check">
+						<label>
+							Graphic-design
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+					<li class="check">
+						<label>
+							Marketing
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+					<li class="check">
+						<label>
+							Research
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+					<li class="check">
+						<label>
+							Writing
+							<input type="checkbox" name="check" value="1" class="userRatings">
+						</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row-tap">
+			<div class="labels">
+				<label for="comment">Any Comments or Suggestions?</label>
+			</div>
+			<div class="right-tap">
+				<textarea style="resize: vertical;" name="comment" cols="30" rows="10" 
+				placeholder="Enter your comment here ...">
+					
+				</textarea>
+			</div>
+		</div>
+		<input type="submit" name="submit" id="submit">
+
+	</form>
+</body>
+</html>
